@@ -88,26 +88,28 @@ body {
   padding: 20px;
 }
 
-.card-container {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
 .card {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 300px;
   border-radius: 8px;
+  text-decoration: none;
   overflow-X: hidden;
+  color: #000;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.card-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .card img {
@@ -119,6 +121,10 @@ body {
 
 .card-content {
   padding: 20px;
+}
+
+.card-content p {
+  margin-top: 10px;
 }
 
 .footer {

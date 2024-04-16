@@ -10,6 +10,59 @@ body{
     height:100vh;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(148, 146, 146, 0.77)
+}
+
+.logo {
+    float: left;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    color: palevioletred;
+}
+
+.nav-links {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 40px;
+    background-color: pink;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: pink;
+    color: #f7f7f7; 
+}
+
+
 
 .card{
     width: 350px;
@@ -90,6 +143,8 @@ input{
         justify-content: space-between;
 
     }
+
+    //display error message
     .error{
         color: red;
         text-align: left;
@@ -97,3 +152,14 @@ input{
     .responseContainer{
         width: 100%;
     }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #856767;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
