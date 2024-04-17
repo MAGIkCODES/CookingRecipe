@@ -37,6 +37,7 @@ body {
 .nav-links li {
     display: inline;
     margin-left: 20px;
+    font-weight: 700;
 }
 
 .nav-links li a {
@@ -48,19 +49,17 @@ body {
 .btn {
     display: inline-block;
     padding: 8px 16px;
-    margin-right: 40px;
-    background-color: pink;
+    margin-right: 90px;
     text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border: 2px solid pink;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
+.navbar .btn:hover {
     background-color: pink;
-    color: #f7f7f7; 
+    border: none;
+    color: #000; 
 }
-
 
 .hero {
     background-image: url('./assets/hero.jpg');

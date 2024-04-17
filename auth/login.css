@@ -41,16 +41,15 @@ body {
   color: #000;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .btn {
   display: inline-block;
   padding: 8px 16px;
   margin-right: 40px;
-  background-color: pink;
   text-decoration: none;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid pink;
   transition: background-color 0.3s ease;
 }
 
@@ -118,7 +117,6 @@ button {
   background: pink;
   width: 100%;
   height: 3em;
-  border-radius: 8px;
   border-width: 0;
   margin-bottom: 1em;
   padding: 0 0 0 10px;
@@ -131,7 +129,9 @@ button {
 }
 
 button:hover {
-  color: #fff;
+  border: 2px solid pink;
+  color: #000;
+  background-color: transparent;
 }
 
 .register-container {
@@ -155,6 +155,6 @@ button:hover {
   width: 100%;
   background-color: #856767;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }/*# sourceMappingURL=login.css.map */

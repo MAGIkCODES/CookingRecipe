@@ -9,8 +9,7 @@ body {
     width: 100%;
     background-color: #fff;
     text-align: center;
-    overflow: hidden;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 2px 8px rgba(148, 146, 146, 0.77)
 }
 .logo {
@@ -21,6 +20,41 @@ body {
     color: palevioletred;
 }
 
+.nav-links {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    // margin-left: 10px;
+}
+
+.nav-links li a {
+    color: rgb(56, 55, 55);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 90px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    border: 2px solid pink;
+    color: #000; 
+}
+
+
 .footer {
     position: fixed;
     background-color: #856767;
@@ -30,3 +64,10 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
