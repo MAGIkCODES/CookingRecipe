@@ -67,7 +67,7 @@ body {
   background-image: url("./assets/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,9 +75,26 @@ body {
   text-align: center;
 }
 
+.hero-content {
+  max-width: 1000px;
+  padding: 20px;
+  overflow: hidden;
+}
+
 .hero h1 {
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: 700;
   margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.hero h1,
+.hero p {
+  animation: slideIn 1s ease-in-out;
 }
 
 .card-wrapper {
@@ -136,6 +153,16 @@ body {
   width: 100%;
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
